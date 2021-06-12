@@ -1,0 +1,69 @@
+.hero {
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-grey-900),
+    var(--color-grey-800)
+  );
+  padding: var(--size-8) 0;
+}
+
+.image {
+  width: 300px;
+  transition: all 0.3s ease;
+  height: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-grey-700);
+  margin: auto;
+}
+.image:hover{
+    transition: 0.2s;
+
+    transform: scale(1.1);
+}
+
+.image img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+@import url("https://fonts.googleapis.com/css?family=Pompiere&display=swap");
+
+.hero h1 {
+  font-size: var(--size-16);
+  margin: var(--size-4) 0;
+  color: var(--color-grey-300);
+  font-family: "Pompiere";
+}
+
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap");
+
+.hero p {
+  font-size: var(--size-12);
+  color: var(--color-grey-200);
+  width: 90%;
+  margin: auto;
+  font-family: "Bilbo Swash Caps";
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+  font-size: 40px;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 1s;
+  user-select: none;
+  cursor: default;
+}
+
+.icon:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+  color: grey;
+  text-shadow: 0 0 120px #f70525;
+}
