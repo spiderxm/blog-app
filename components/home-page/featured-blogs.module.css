@@ -3,15 +3,17 @@
   max-width: 80rem;
   margin: var(--size-8) auto;
 }
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 
 .latest h2 {
-  font-size: var(--size-8);
-  color: var(--color-grey-800);
+  font-size: 25px;
+  color: white;
   text-align: center;
+  font-family: "Special Elite";
 }
 
 @media (min-width: 768px) {
   .latest h2 {
-    font-size: var(--size-16);
+    font-size: 40px;
   }
 }

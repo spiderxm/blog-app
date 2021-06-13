@@ -1,23 +1,51 @@
 import PostHeader from "./post-header";
 import classes from "./post-content.module.css";
 import ReactMarkdown from "react-markdown";
-
-const DUMMY_POST = {
-  title: "About Me",
-  image: "image.jpg",
-  slug: "1",
-  readTime: 9,
-  excerpt: "lorem epsum",
-  date: "2021-06-13",
-  content: ``,
-};
-function PostContent() {
-  const imagePath = `/images/blogs/${DUMMY_POST.slug}/${DUMMY_POST.image}`;
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import Head from "next/head";
+function PostContent(props) {
+  const { blog } = props;
+  if (!blog) {
+    return <h1>Loading Blog</h1>;
+  }
+  const imagePath = `/images/blogs/${blog.slug}/${blog.image}`;
+  const customImagePath = function (src, alt, title) {
+    return `/images/blogs/${blog.slug}/${src}`;
+  };
+  const renderers = {
+    code(code) {
+      const { language, value } = code;
+      return (
+        <SyntaxHighlighter
+          style={atomDark}
+          language={language}
+          children={value}
+        />
+      );
+    },
+  };
   return (
-    <article className={classes.content}>
-      <PostHeader title={DUMMY_POST.title} image={imagePath} />
-      <ReactMarkdown>{DUMMY_POST.content}</ReactMarkdown>
-    </article>
+    <div>
+      <Head>
+        <title>{blog.title}</title>
+      </Head>
+      <PostHeader
+        title={blog.title}
+        image={imagePath}
+        date={blog.date}
+        readTime={blog.readTime}
+      />
+      <article className={classes.content}>
+        <ReactMarkdown
+          escapeHtml={false}
+          transformImageUri={customImagePath}
+          renderers={renderers}
+        >
+          {blog.content}
+        </ReactMarkdown>
+      </article>
+    </div>
   );
 }
 

@@ -1,13 +1,15 @@
-.blogs{
+.blogs {
   width: 90%;
   max-width: 60rem;
   margin: var(--size-8) auto;
 }
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 
 .blogs h1 {
   font-size: var(--size-8);
-  color: var(--color-grey-800);
+  color: white;
   text-align: center;
+  font-family: 'Special Elite';
 }
 
 @media (min-width: 768px) {
