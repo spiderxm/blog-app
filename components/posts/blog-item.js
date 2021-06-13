@@ -21,7 +21,6 @@ function BlogItem(props) {
             <h3>{title}</h3>
             <time>{readableDate}</time>
             <p>{excerpt}</p>
-            <p>{readTime} min read</p>
           </div>
         </a>
       </Link>

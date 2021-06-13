@@ -21,6 +21,7 @@
 
 .outer img {
   max-width: 90%;
+  max-height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -29,8 +30,25 @@
 .outer time {
   text-align: left;
   margin-left: 1rem;
+  font-family: monospace;
 }
 
 .outer span {
+  font-family: monospace;
   margin-left: 1rem;
+}
+
+.outer p {
+  display: inline-block;
+  margin: 1rem;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.outer p :hover {
+  transform: scale(1.1);
 }

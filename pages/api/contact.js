@@ -5,6 +5,7 @@ export default async function (req, res) {
     return res.status(200).json({ message: "Welcome to contact API" });
   }
   if (req.method == "POST") {
+    console.log(req.body);
     const { email, name, message } = req.body;
     if (!email) {
       res.status(400).send({ message: "Please Provide a valid email" });

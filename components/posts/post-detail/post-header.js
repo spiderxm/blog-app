@@ -1,7 +1,7 @@
 import classes from "./post-header.module.css";
 import Image from "next/image";
 function PostHeader(props) {
-  const { date, title, image, readTime } = props;
+  const { date, title, image, readTime, tags } = props;
   return (
     <div className={classes.outer}>
       <div>
@@ -19,6 +19,11 @@ function PostHeader(props) {
           })}
         </time>
         <span>{readTime} min read</span>
+      </div>
+      <div>
+        {tags.map((tag) => {
+          return <p>{tag}</p>;
+        })}
       </div>
     </div>
   );

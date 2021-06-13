@@ -7,6 +7,7 @@
   );
   padding: var(--size-8) 0;
 }
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 
 .image {
   width: 300px;
@@ -18,10 +19,9 @@
   background-color: var(--color-grey-700);
   margin: auto;
 }
-.image:hover{
-    transition: 0.2s;
-
-    transform: scale(1.1);
+.image:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 .image img {
@@ -39,14 +39,12 @@
   font-family: "Pompiere";
 }
 
-@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap");
-
 .hero p {
   font-size: var(--size-12);
   color: var(--color-grey-200);
   width: 90%;
   margin: auto;
-  font-family: "Bilbo Swash Caps";
+  font-family: "Special Elite";
 }
 
 .icon {

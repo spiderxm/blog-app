@@ -34,6 +34,7 @@ function PostContent(props) {
         image={imagePath}
         date={blog.date}
         readTime={blog.readTime}
+        tags={blog.tags}
       />
       <article className={classes.content}>
         <ReactMarkdown

@@ -5,8 +5,22 @@
   width: 90%;
   max-width: 50rem;
   padding: var(--size-4);
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important; 
-   font-size: var(--size-6);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+  font-size: var(--size-6);
+}
+.notification {
+  margin: var(--size-8) auto;
+  border-radius: 20px;
+  background-color: white;
+  width: 90%;
+  max-width: 50rem;
+  padding: var(--size-4);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+  font-size: var(--size-6);
+}
+
+.notification h4{
+  font-size: 20px
 }
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 
