@@ -1,40 +1,17 @@
-import { Fragment } from "react";
-import BlogsGrid from "../../components/posts/blog-grid";
-
+import AllPosts from "../../components/posts/all-blogs";
+import { getAllBlogs } from "../../helpers/posts-util";
 function AllPostsPage(props) {
   const { blogs } = props;
-  return (
-    <Fragment>
-      <BlogsGrid blogs={blogs}></BlogsGrid>
-    </Fragment>
-  );
+  return <AllPosts blogs={blogs} />;
 }
 
 export default AllPostsPage;
 
-
 export async function getStaticProps() {
-    return {
-      props: {
-        blogs: [
-          {
-            title: "Blog 1",
-            image: "image.jpg",
-            slug: 1,
-            readTime: 9,
-            excerpt: "lorem epsum",
-            date: "2021-06-13",
-          },
-          {
-            title: "Blog 2",
-            image: "image.jpg",
-            slug: 2,
-            readTime: 9,
-            excerpt: "lorem epsum",
-            date: "2021-06-13",
-          },
-        ],
-      },
-    };
-  }
-  
+  return {
+    props: {
+      blogs: getAllBlogs(),
+    },
+    revalidate: 1800,
+  };
+}

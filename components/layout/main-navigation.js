@@ -17,7 +17,7 @@ function Navigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/posts">Posts</Link>
+            <Link href="/blogs">Blogs</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
