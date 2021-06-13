@@ -4,6 +4,7 @@
   width: 95%;
   max-width: 60rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
   font-size: var(--size-5);
   line-height: var(--size-8);
   background-color: white;

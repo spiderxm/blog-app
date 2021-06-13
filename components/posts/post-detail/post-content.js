@@ -38,7 +38,7 @@ function PostContent(props) {
       />
       <article className={classes.content}>
         <ReactMarkdown
-          escapeHtml={false}
+          escapeHtml={true}
           transformImageUri={customImagePath}
           components={renderers}
         >

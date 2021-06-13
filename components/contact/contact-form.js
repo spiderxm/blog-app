@@ -44,8 +44,11 @@ function ContactForm() {
         }
       })
       .then((data) => {
+        messageRef.current.value = "";
+        nameRef.current.value = "";
+        emailRef.current.value = "";
         setShowNotification(false);
-        setMessage("Successfully Sent Message");
+        setMessage("Message sent successfully");
       })
       .catch((error) => {
         setShowNotification(false);
