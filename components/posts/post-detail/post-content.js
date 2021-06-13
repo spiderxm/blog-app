@@ -1,8 +1,8 @@
 import PostHeader from "./post-header";
 import classes from "./post-content.module.css";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
 import Head from "next/head";
 function PostContent(props) {
   const { blog } = props;
@@ -15,12 +15,11 @@ function PostContent(props) {
   };
   const renderers = {
     code(code) {
-      const { language, value } = code;
       return (
         <SyntaxHighlighter
           style={atomDark}
-          language={language}
-          children={value}
+          language={code.className.replace("language-", "")}
+          children={code.children}
         />
       );
     },
@@ -40,7 +39,7 @@ function PostContent(props) {
         <ReactMarkdown
           escapeHtml={false}
           transformImageUri={customImagePath}
-          renderers={renderers}
+          components={renderers}
         >
           {blog.content}
         </ReactMarkdown>
