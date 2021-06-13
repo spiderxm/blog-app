@@ -1,5 +1,4 @@
 import classes from "./post-header.module.css";
-import Image from "next/image";
 function PostHeader(props) {
   const { date, title, image, readTime, tags } = props;
   return (
@@ -18,6 +17,7 @@ function PostHeader(props) {
             year: "numeric",
           })}
         </time>
+        <span>-</span>
         <span>{readTime} min read</span>
       </div>
       <div>

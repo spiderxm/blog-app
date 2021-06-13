@@ -6,24 +6,22 @@ readTime: "5"
 image: "image.png"
 coverImage: "cover1.png"
 isFeatured: true
-tags: ["Community Bonding", "Gsoc 2k21", "OWASP"]
+tags: ["Community Bonding", "GSoC 2k21", "OWASP"]
 ---
 
 > **This blog post consists of my journey in the Community Bonding period of GSoC 2k21**
 
-Hello everyone, I am Mrigank Anand a second-year student pursuing B.Tech in Computer Science from NIT Hamirpur. I have been selected as a student developer in Google summer of code under the OWASP (Open Web Application Security Project) organization & will be spending my summer working on[Python Honeypot](https://github.com/OWASP/Python-Honeypot) Project under the guidance of my mentors Ali Ramzoo and Dhiren Serai.
+Hello everyone, I am Mrigank Anand a second-year student pursuing B.Tech in Computer Science from NIT Hamirpur. I have been selected as a student developer in Google summer of code under the OWASP (Open Web Application Security Project) organization & will be spending my summer working on [Python Honeypot](https://github.com/OWASP/Python-Honeypot) Project under the guidance of my mentors Ali Ramzoo and Dhiren Serai.
 
 You can more details about my project from here : [Project Details](https://summerofcode.withgoogle.com/projects/#4753249262895104)
 
-
 OWASP Honeypot framework helps you to automate and initialize your own honeypot/deception service using docker containers in a very easy and secure way, This project has several built-in modules, and multiple functionalities to add your own new modules based on your needs.
-
 
 Here is my journey week wise:
 
 ### Week1 (18th May to 24th May)
 
-- **Learning Docker**: I got my hands dirty on Docker as the Python Honeypot project uses Docker for deployment to modules and web server.
+- **Learning Docker**: I got my hands dirty on Docker as the Python Honeypot project uses Docker for deployment of modules and web server.
 - **Setting up the development environment**: Set up the development environment on macOS and Linux mint to test the features that I add over time on both operating systems and have a smooth development experience.
 - **Code Base**: Took a deep dive into the codebase. Figured out how various things are working in the project. Found some minor bugs and I raised a couple of Pull Requests for the same.
 
