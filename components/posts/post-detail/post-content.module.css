@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant&display=swap");
 
 .content {
   width: 95%;
@@ -10,7 +10,8 @@
   background-color: white;
   border-radius: 0 0 6px 6px;
   padding: var(--size-4);
-  font-family: "Special Elite";
+  font: 22px "Cormorant";
+  font-weight: bolder;
 }
 
 .content h2 {
