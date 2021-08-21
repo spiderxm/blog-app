@@ -12,14 +12,11 @@ isFeatured: true
 ## Introduction
 
 OWASP Honeypot framework helps you to automate and initialize your own honeypot/deception service using docker
-containers in a very easy and secure way, This project has several built-in modules, and multiple functionalities to add
+containers in a very easy and secure way. This project has several built-in modules, and multiple functionalities to add
 your own new modules based on your needs.
 
-
-
-You can more details about my project from
+You can get more details about my project from
 here : [Project Details](https://summerofcode.withgoogle.com/projects/#4753249262895104)
-
 
 ## My work
 
@@ -53,7 +50,7 @@ here : [Project Details](https://summerofcode.withgoogle.com/projects/#475324926
 
 ### Internationalization
 
-> I added support for multiple languages in Web Console and CLI with translations currently added for 5 languages.
+> I added support for multiple languages in Web Console and CLI with translations currently available for 5 languages.
 > > - es_ES (Spanish)
 > > - ru_RU (Russian)
 > > - en_US (English)
@@ -107,18 +104,13 @@ work: [here](https://github.com/OWASP/Python-Honeypot/pulls?q=is%3Apr+author%3As
 I am very thankful to my mentors [Ali Razmjoo](https://github.com/Ali-Razmjoo)
 and [Dhiren Serai](https://github.com/dhirensr). Without them, the work never would have been this joyful and rewarding.
 Both were always available to answer my questions on time. I love the OWASP community for its welcoming and enthusiastic
-nature. Finally, thanks to the GSoC program, without which, I wouldn’t be a part of this awesome project and gain this
-memorable experience. I am thankful to them for creating this kind of opportunity for students. I am grateful and love
-to contribute more in open source.
-
-Final thanks to Google for organizing this amazing program. I feel GSoC made it easier for me to get started with open
-source contributions. It was a great lesson on how projects are built and maintained with great quality. I am excited to
-continue contributing to the open-source community.
+nature. They have been very supportive and understanding and they are always open to newer ideas. Final thanks to Google
+for organizing this amazing program. I feel GSoC made it easier for me to get started with open source contributions. It
+was a great lesson on how projects are built and maintained with great quality. I am excited to continue contributing to
+the open-source community.
 
 ## Singing off
 
-So with this I am done with my blog post for GSoC evaluation. But the journey will go on. I will continue to contribute
-in the project after the GSoC as well and all the bugs if occurs. Work on code reviews and new features. Now, I will
-come back with new update in my project if I got a chance.
-
-Bye
+So with this, I am done with my blog post for GSoC evaluation. But the journey will go on. I will continue to contribute
+to the project after the GSoC as well. Work on code reviews and new features. Now, I will come back with new updates in
+my project if I got a chance.
